@@ -1,0 +1,106 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* ============= modal ============= */
+.modal {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	background: #000;
+	z-index: 1000;
+	padding: 48px 24px;
+}
+
+/* ============= form header ============= */
+.form {
+	margin: 0 auto;
+	width: 100%;
+	max-width: 700px;
+	background: #f1f1f1;
+}
+
+/* ============= form header ============= */
+.form__header {
+	height: 60px;
+	display: flex;
+	align-items: center;
+	padding: 0 24px;
+	background: rgb(136, 136, 136);
+}
+
+.form__close {
+	width: 30px;
+	height: 30px;
+	background: red;
+	margin-left: auto;
+	cursor: pointer;
+}
+
+/* ============= form body ============= */
+.form__body {
+	padding: 16px 0;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.form__label:not(:last-child) {
+	margin-bottom: 12px;
+}
+
+.form__label {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	padding: 0 24px;
+}
+
+@media all and (max-width: 768px) {
+	.form__label {
+		width: 100%;
+	}
+}
+
+.form__label-title {
+	margin-bottom: 8px;
+}
+
+.form__input {
+	border: 1px solid #b9b9b9;
+	height: 30px;
+	padding: 0 10px;
+}
+
+/* ============= form footer ============= */
+.form__footer {
+	padding: 8px 24px;
+	display: flex;
+	justify-content: center;
+}
+
+/* ============= buttons ============= */
+.btn {
+	border: none;
+	background: rgb(6, 86, 190);
+	color: #fff;
+	height: 35px;
+	padding: 0 12px;
+	cursor: pointer;
+}
+
+.btn:hover {
+	background: rgb(4, 72, 161);
+}
+
+/* ============= error ============= */
+.error {
+	color: red;
+}
+
+.error .form__input {
+	border: 1px solid red;
+}
